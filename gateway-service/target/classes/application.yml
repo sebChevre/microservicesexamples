@@ -1,0 +1,42 @@
+info:
+  component: Edge Server
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+  health:
+    sensitive: false
+
+zuul:
+  prefix: /api/v1
+  routes:
+    account:
+      path: /user-api/**
+      serviceId: users-service
+    customer:
+      path: /tier-api/**
+      serviceId: tiers-service
+
+ribbon:
+  eureka:
+    enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:9000/eureka/}
+    registerWithEureka: false
+
+server:
+  port: ${PORT:8000}
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.web: DEBUG
+
+spring:
+  zipkin:
+    baseUrl: ${ZIPKIN_URI:http://localhost:9411}

@@ -1,0 +1,7 @@
+ch/sebooom/users/spi/repository/InMemoryUserRepository.class
+ch/sebooom/users/config/TracingConfiguration.class
+ch/sebooom/users/config/DiscoveryConfiguration.class
+ch/sebooom/users/UsersServiceApplication.class
+ch/sebooom/users/domain/model/User.class
+ch/sebooom/users/domain/repository/UserRepository.class
+ch/sebooom/users/api/Api.class

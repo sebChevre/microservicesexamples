@@ -1,0 +1,23 @@
+server:
+  port: ${PORT:9100}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${DISCOVERY_URL:http://localhost:9000}/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+
+ribbon:
+  eureka:
+    enabled: true
+
+spring:
+  zipkin:
+    baseUrl: ${ZIPKIN_URI:http://localhost:9411}
+  profiles:
+      active: discovery,tracing,standalone
+
+
+

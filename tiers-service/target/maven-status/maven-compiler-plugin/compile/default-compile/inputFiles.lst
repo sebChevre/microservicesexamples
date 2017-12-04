@@ -1,0 +1,7 @@
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/domain/repository/TiersRepository.java
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/domain/model/Tiers.java
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/api/Api.java
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/config/TiersServiceSwaggerConfiguration.java
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/spi/repository/InMemoryTiersRepository.java
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/TiersServiceApplication.java
+/Users/seb/Dropbox/dev/SPRING/microservicesexamples/tiers-service/src/main/java/ch/sebooom/tiers/config/TiersServiceConfiguration.java
