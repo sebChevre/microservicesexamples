@@ -2,12 +2,15 @@ package ch.sebooom.tiers.spi.repository;
 
 import ch.sebooom.tiers.domain.model.Tiers;
 import ch.sebooom.tiers.domain.repository.TiersRepository;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Profile("testRepo")
 public class InMemoryTiersRepository implements TiersRepository {
     private final static List<Tiers> TIERS = new ArrayList<>();
 
@@ -32,6 +35,11 @@ public class InMemoryTiersRepository implements TiersRepository {
     @Override
     public Tiers findByNameAndSurname(String name, String surname) {
         return TIERS.stream().filter(tier -> tier.getNom().equals(name) && tier.getPrenom().equals(surname)).findFirst().get();
+    }
+
+    @Override
+    public Tiers createNewTiers(Tiers tier) {
+        throw new NotImplementedException();
     }
 
 

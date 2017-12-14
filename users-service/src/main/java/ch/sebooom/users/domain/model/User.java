@@ -1,11 +1,25 @@
 package ch.sebooom.users.domain.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "user")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    @Column(name = "username")
     private String username;
+
+    @Column(name = "password")
     private String password;
+
+    @Column(name = "tiersId")
     private Integer tiersId;
+
+    @Transient
     private Tiers tiers;
 
     public User () {}
@@ -40,5 +54,22 @@ public class User {
 
     public void setTiers(Tiers tiers) {
         this.tiers = tiers;
+        this.tiersId = tiers.getId();
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setTiersId(Integer tiersId) {
+        this.tiersId = tiersId;
     }
 }

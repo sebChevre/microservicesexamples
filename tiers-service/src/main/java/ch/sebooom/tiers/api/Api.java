@@ -1,12 +1,11 @@
 package ch.sebooom.tiers.api;
 
 import ch.sebooom.tiers.domain.model.Tiers;
-import ch.sebooom.tiers.domain.repository.TiersRepository;
+import ch.sebooom.tiers.service.TiersService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -15,7 +14,7 @@ import java.util.logging.Logger;
 public class Api {
 
     @Autowired
-    private TiersRepository tiersRepository;
+    private TiersService tiersService;
 
 
 
@@ -26,16 +25,21 @@ public class Api {
     @RequestMapping( value = "/tiers/{id}",method = RequestMethod.GET )
     public Tiers findById(@PathVariable("id") Integer id) {
         logger.info(String.format("Tiers.findById(%d)", id));
-        return tiersRepository.findById(id);
+        return tiersService.findById(id);
     }
 
     @RequestMapping( value = "/tiers", method = RequestMethod.GET )
     public List<Tiers> findByAll() {
         logger.info("Tiers.findAll()");
-        return tiersRepository.findAll();
+        return tiersService.findAll();
     }
 
 
+    @RequestMapping( value = "/tiers", method = RequestMethod.POST)
+    public ResponseEntity<Tiers> createNewTiers(@RequestBody Tiers tier){
+        tiersService.createNewTiers(tier);
+        return new ResponseEntity<Tiers>(tier, HttpStatus.CREATED);
+    }
 
 
 
