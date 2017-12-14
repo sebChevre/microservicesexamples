@@ -16,7 +16,7 @@ zuul:
       path: /user-api/**
       serviceId: users-service
     customer:
-      path: /tier-api/**
+      path: /tiers-api/**
       serviceId: tiers-service
 
 ribbon:

@@ -2,12 +2,15 @@ package ch.sebooom.users.spi.repository;
 
 import ch.sebooom.users.domain.model.User;
 import ch.sebooom.users.domain.repository.UserRepository;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@Profile("testRepo")
 public class InMemoryUserRepository implements UserRepository {
 
     private final static List<User> USERS = new ArrayList<>();
@@ -32,5 +35,10 @@ public class InMemoryUserRepository implements UserRepository {
     @Override
     public User findByUserName(String userName) {
         return USERS.stream().filter(user -> user.getUsername().equals(userName)).findFirst().get();
+    }
+
+    @Override
+    public User create(User user) {
+        throw new NotImplementedException();
     }
 }

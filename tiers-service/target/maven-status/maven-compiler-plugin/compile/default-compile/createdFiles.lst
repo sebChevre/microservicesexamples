@@ -1,0 +1,12 @@
+ch/sebooom/tiers/config/DiscoveryConfiguration.class
+ch/sebooom/tiers/service/TiersService.class
+ch/sebooom/tiers/config/TiersServiceSwaggerConfiguration.class
+ch/sebooom/tiers/spi/repository/H2TiersRepository.class
+ch/sebooom/tiers/api/Api.class
+ch/sebooom/tiers/service/impl/TiersServiceImpl.class
+ch/sebooom/tiers/TiersServiceApplication.class
+ch/sebooom/tiers/config/TracingConfiguration.class
+ch/sebooom/tiers/domain/model/Tiers.class
+ch/sebooom/tiers/spi/repository/InMemoryTiersRepository.class
+ch/sebooom/tiers/domain/repository/TiersRepository.class
+ch/sebooom/tiers/config/TiersServiceConfiguration.class
