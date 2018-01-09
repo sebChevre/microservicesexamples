@@ -9,6 +9,8 @@
 * https://gooroo.io/GoorooTHINK/Article/17367/Spring-Cloud-and-Netflix-Ribbon-Clientside-Load-Balancing/28985#.WhnCULQtUTI
 
 # Lancement application
+## Documentation Eureka
+https://github.com/Netflix/eureka/wiki/Eureka-REST-operations
 ## Eureka - Service Discovery
 Démarage spring eureka, découverte de service:
 ```
@@ -33,6 +35,9 @@ mvn spring-boot:run -DPORT=9999
 ```
 
 ## Gateway - Gateway service
+### Documentation
+https://exampledriven.wordpress.com/2016/07/06/spring-cloud-zuul-example/
+
 Démarrage:
 ```
 mvn spring-boot:run
