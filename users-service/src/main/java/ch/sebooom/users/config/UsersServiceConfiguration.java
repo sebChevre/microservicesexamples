@@ -3,6 +3,8 @@ package ch.sebooom.users.config;
 import ch.sebooom.users.domain.model.User;
 import ch.sebooom.users.dto.UserDto;
 import ch.sebooom.users.dto.UserWithTiersDto;
+import org.apache.http.HttpHost;
+import org.elasticsearch.client.RestClient;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.modelmapper.convention.MatchingStrategies;
@@ -46,5 +48,13 @@ public class UsersServiceConfiguration {
             }
         });
         return mapper;
+    }
+
+
+    @Bean
+    public RestClient esRestClient () {
+        return RestClient.builder(
+                new HttpHost("localhost", 9200, "http"),
+                new HttpHost("localhost", 9201, "http")).build();
     }
 }
