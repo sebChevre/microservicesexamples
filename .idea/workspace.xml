@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a569cd20-282e-4e2c-b2bf-53d7e3e9f768" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/domain/repository/UserSearchRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/spi/repository/ESUserSearchRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/discovery-service/target/classes/ch/sebooom/discoveryservice/Application.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/config/UsersServiceConfiguration$1.class" afterPath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/config/UsersServiceConfiguration$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/config/UsersServiceConfiguration$2.class" afterPath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/config/UsersServiceConfiguration$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/config/UsersServiceConfiguration.class" afterPath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/config/UsersServiceConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/service/impl/UsersServiceImpl.class" afterPath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/service/impl/UsersServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s101plugin.state" afterPath="$PROJECT_DIR$/s101plugin.state" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/config/UsersServiceConfiguration.java" afterPath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/config/UsersServiceConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/service/impl/UsersServiceImpl.java" afterPath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/service/impl/UsersServiceImpl.java" />
-    </list>
+    <list default="true" id="a569cd20-282e-4e2c-b2bf-53d7e3e9f768" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/users-service/target/" />
@@ -77,8 +65,8 @@
       <file leaf-file-name="data.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users-service/src/main/resources/data.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -555,194 +543,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="servicesclient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="spi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ch" type="462c0819:PsiDirectoryNode" />
-              <item name="sebooom" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-              <item name="spi" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="microservicesexamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="microservicesexamples" type="462c0819:PsiDirectoryNode" />
-              <item name="users-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -989,16 +789,15 @@
       <workItem from="1511635833814" duration="10867000" />
       <workItem from="1512421930017" duration="15389000" />
       <workItem from="1513261504378" duration="5096000" />
-      <workItem from="1515508252729" duration="1408000" />
+      <workItem from="1515508252729" duration="2119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53429000" />
+    <option name="totallyTimeSpent" value="54140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="22" width="1393" height="878" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26181355" sideWeight="0.19393042" order="7" side_tool="true" content_ui="tabs" />
@@ -1020,7 +819,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.532567" sideWeight="0.7714497" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.4974208" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26181355" sideWeight="0.80606955" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26181355" sideWeight="0.80606955" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28793487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure101 Studio XS Offenders" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.49704143" order="7" side_tool="false" content_ui="tabs" />
@@ -1459,8 +1258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users-service/src/main/resources/data.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
