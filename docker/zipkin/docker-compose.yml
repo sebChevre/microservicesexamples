@@ -1,0 +1,37 @@
+version: '2'
+services:
+  users-service:
+    image: users-service
+    depends_on:
+     - discovery-service
+    ports:
+      - "9100:9100"
+    environment:
+      - DISCOVERY_URL=http://discovery-service:9000
+      - ZIPKIN_URI=http://zipkin-service:9411
+  tiers-service:
+    image: tiers-service
+    depends_on:
+    - discovery-service
+    ports:
+    - "9200:9200"
+    environment:
+          - DISCOVERY_URL=http://discovery-service:9000
+          - ZIPKIN_URI=http://zipkin-service:9411
+  discovery-service:
+    image: discovery-service
+    ports:
+     - "9000:9000"
+  gateway-service:
+    image: gateway-service
+    depends_on:
+        - discovery-service
+    ports:
+     - "8000:8000"
+    environment:
+          - DISCOVERY_URL=http://discovery-service:9000
+          - ZIPKIN_URI=http://zipkin-service:9411
+  zipkin-service:
+    image: zipkin-service
+    ports:
+     - "9411:9411"

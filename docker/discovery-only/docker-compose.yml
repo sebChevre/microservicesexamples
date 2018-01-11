@@ -1,0 +1,22 @@
+version: '2'
+services:
+  users-service:
+    image: users-service
+    depends_on:
+     - discovery-service
+    ports:
+      - "9100:9100"
+    environment:
+      - DISCOVERY_URL=http://discovery-service:9000
+  tiers-service:
+    image: tiers-service
+    depends_on:
+    - discovery-service
+    ports:
+    - "9200:9200"
+    environment:
+          - DISCOVERY_URL=http://discovery-service:9000
+  discovery-service:
+    image: discovery-service
+    ports:
+     - "9000:9000"
