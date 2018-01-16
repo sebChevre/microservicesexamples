@@ -16,6 +16,9 @@
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
+*.iml
+.idea/**/**
+.idea
 
 # Gradle:
 .idea/**/gradle.xml
@@ -49,23 +52,63 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+### Maven template
+*/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
 
-.gitignore
-.idea/inspectionProfiles/
-discovery-service/src/test/
-gateway-service/src/test/
-gateway-service/target/generated-sources/
-src/main/resources/
-src/test/
-tiers-service/src/main/java/ch/sebooom/tiers/exception/
-tiers-service/src/test/
-users-service/src/main/java/ch/sebooom/users/exception/
-users-service/src/test/
-zipkin-service/src/test/
-/tiers-service/tiers-service.iml
-/.idea/
-/discovery-service/discovery-service.iml
-/gateway-service/gateway-service.iml
-/gateway-service/target/
-/users-service/users-service.iml
-/zipkin-service/zipkin-service.iml
+# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea
+/.idea/**
+discovery-service/target/discovery-service-1.0-SNAPSHOT.jar
+discovery-service/target/discovery-service-1.0-SNAPSHOT.jar.original
+discovery-service/target/docker/
+discovery-service/target/generated-sources/
+discovery-service/target/maven-archiver/
+discovery-service/target/test-classes/
+tiers-service/target/classes/banner.txt
+tiers-service/target/docker/
+tiers-service/target/generated-sources/
+tiers-service/target/maven-archiver/
+tiers-service/target/test-classes/
+tiers-service/target/tiers-service-1.0-SNAPSHOT.jar
+tiers-service/target/tiers-service-1.0-SNAPSHOT.jar.original
+users-service/target/docker/
+users-service/target/generated-sources/
+users-service/target/maven-archiver/
+users-service/target/test-classes/
+users-service/target/users-service-1.0-SNAPSHOT.jar
+users-service/target/users-service-1.0-SNAPSHOT.jar.original
+zipkin-service/target/
