@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a569cd20-282e-4e2c-b2bf-53d7e3e9f768" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiers-service/target/docker/tiers-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tiers-service/target/docker/tiers-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiers-service/target/tiers-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/tiers-service/target/tiers-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiers-service/target/tiers-service-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/tiers-service/target/tiers-service-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/UsersServiceApplication.class" afterPath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/UsersServiceApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/api/Api.class" afterPath="$PROJECT_DIR$/users-service/target/classes/ch/sebooom/users/api/Api.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-service/target/classes/banner.txt" afterPath="$PROJECT_DIR$/discovery-service/target/classes/banner.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/discovery-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/discovery-service/target/test-classes/image_info.json" afterPath="$PROJECT_DIR$/discovery-service/target/test-classes/image_info.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gateway-service/target/classes/banner.txt" afterPath="$PROJECT_DIR$/gateway-service/target/classes/banner.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/s101plugin.state" afterPath="$PROJECT_DIR$/s101plugin.state" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiers-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/tiers-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tiers-service/target/test-classes/image_info.json" afterPath="$PROJECT_DIR$/tiers-service/target/test-classes/image_info.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/pom.xml" afterPath="$PROJECT_DIR$/users-service/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/UsersServiceApplication.java" afterPath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/UsersServiceApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/api/Api.java" afterPath="$PROJECT_DIR$/users-service/src/main/java/ch/sebooom/users/api/Api.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/target/classes/banner.txt" afterPath="$PROJECT_DIR$/users-service/target/classes/banner.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/users-service/users-service.iml" afterPath="$PROJECT_DIR$/users-service/users-service.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,7 +37,7 @@
       <file leaf-file-name="banner.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/users-service/src/main/resources/banner.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="0">
               <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
@@ -85,8 +67,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -600,12 +582,12 @@
       <workItem from="1515508252729" duration="4036000" />
       <workItem from="1515528406493" duration="16759000" />
       <workItem from="1515691087738" duration="22000" />
-      <workItem from="1516090950240" duration="256000" />
+      <workItem from="1516090950240" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73094000" />
+    <option name="totallyTimeSpent" value="73341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="22" width="1393" height="878" extended-state="0" />
@@ -630,8 +612,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53128994" sideWeight="0.75795704" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.49444854" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37931034" sideWeight="0.7572169" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3330866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37931034" sideWeight="0.7572169" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3330866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure101 Studio XS Offenders" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.49704143" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure101 Studio Settings" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.49704143" order="7" side_tool="false" content_ui="tabs" />
@@ -4947,7 +4929,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users-service/src/main/resources/banner.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="0">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
@@ -4957,14 +4939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zipkin-service/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -5009,10 +4983,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zipkin-service/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="86" column="12" lean-forward="false" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
