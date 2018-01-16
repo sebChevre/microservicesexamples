@@ -6,6 +6,7 @@ import ch.sebooom.users.dto.UserDto;
 import ch.sebooom.users.dto.UserWithTiersDto;
 import ch.sebooom.users.service.UsersService;
 import ch.sebooom.users.servicesclient.TiersServicesClient;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,6 +43,7 @@ public class Api {
 
 
     @RequestMapping( value = "/users/{id}", method = RequestMethod.GET)
+    @HystrixCommand(fallbackMethod = "fallBackFindById")
     public ResponseEntity<UserWithTiersDto> findById(@PathVariable("id") Integer id) {
         logger.info(String.format("User.findById(%d)", id));
         User user =  userService.findById(id);
@@ -52,6 +54,10 @@ public class Api {
 
 
         return new ResponseEntity<UserWithTiersDto>(convertToDtoWithTiers(user),HttpStatus.ACCEPTED);
+    }
+
+    public ResponseEntity<UserWithTiersDto> fallBackFindById(@RequestBody UserWithTiersDto userDto, Throwable t){
+        return new ResponseEntity<>(HttpStatus.GATEWAY_TIMEOUT);
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.GET )
@@ -69,6 +75,7 @@ public class Api {
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.POST )
+    @HystrixCommand(fallbackMethod = "fallBackCreate")
     public ResponseEntity<UserWithTiersDto> create(@RequestBody UserWithTiersDto userDto) {
 
         logger.info(String.format("User.create(%s)",userDto));
@@ -83,6 +90,10 @@ public class Api {
 
 
         return new ResponseEntity<UserWithTiersDto>(convertToDtoWithTiers(newUser), HttpStatus.CREATED);
+    }
+
+    public ResponseEntity<UserWithTiersDto> fallBackCreate(@RequestBody UserWithTiersDto userDto, Throwable t){
+        return new ResponseEntity<UserWithTiersDto>(new UserWithTiersDto(),HttpStatus.GATEWAY_TIMEOUT);
     }
 
     private UserDto convertToDto(User user) {
