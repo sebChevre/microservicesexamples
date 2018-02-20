@@ -3,9 +3,7 @@ package ch.sebooom.users.api;
 import ch.sebooom.users.domain.model.Tiers;
 import ch.sebooom.users.domain.model.User;
 import ch.sebooom.users.dto.UserDto;
-import ch.sebooom.users.dto.UserWithTiersDto;
 import ch.sebooom.users.service.UsersService;
-import ch.sebooom.users.servicesclient.TiersServicesClient;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,8 +23,7 @@ public class Api {
     @Autowired
     private UsersService userService;
 
-    @Autowired
-    private TiersServicesClient tiersServicesClient;
+
 
     @Autowired
     private ModelMapper modelMapper;
@@ -42,16 +39,28 @@ public class Api {
 
 
     @RequestMapping( value = "/users/{id}", method = RequestMethod.GET)
-    public ResponseEntity<UserWithTiersDto> findById(@PathVariable("id") Integer id) {
+    public ResponseEntity<UserDto> findById(@PathVariable("id") Integer id) {
         logger.info(String.format("User.findById(%d)", id));
         User user =  userService.findById(id);
-        Tiers tier = tiersServicesClient.getTiers(user.getTiersId());
-        user.setTiers(tier);
+        ResponseEntity<Tiers> tiersResponse = userService.getTiersRemote(user.getTiersId());
+        //user.setTiers(tier);
 
         logger.info(MDC.get("X-B3-TraceId"));
 
 
-        return new ResponseEntity<UserWithTiersDto>(convertToDtoWithTiers(user),HttpStatus.ACCEPTED);
+        return new ResponseEntity<UserDto>(convertToDto(user),HttpStatus.ACCEPTED);
+    }
+
+    @RequestMapping( value = "/users/{id}/activate", method = RequestMethod.PUT)
+    public ResponseEntity<UserDto> activateUserAccount(@PathVariable("id") Integer id) {
+        logger.info(String.format("User.activateUserAccount(%d)", id));
+
+
+        User user = userService.activateUserAccount(id);
+        logger.info(MDC.get("X-B3-TraceId"));
+
+
+        return new ResponseEntity<UserDto>(convertToDto(user),HttpStatus.ACCEPTED);
     }
 
     @RequestMapping( value = "/users", method = RequestMethod.GET )
@@ -68,21 +77,26 @@ public class Api {
         return new ResponseEntity<List<UserDto>>(usersDto,HttpStatus.ACCEPTED);
     }
 
+
     @RequestMapping( value = "/users", method = RequestMethod.POST )
-    public ResponseEntity<UserWithTiersDto> create(@RequestBody UserWithTiersDto userDto) {
+    public ResponseEntity<?> create(@RequestBody UserDto userDto) {
 
         logger.info(String.format("User.create(%s)",userDto));
 
-        Tiers tiers = tiersServicesClient.createTiers(userDto.getTiers());
-
-        User newUser = convertToEntity(userDto.getUser());
-        newUser.setTiers(tiers);
-
-        newUser = userService.createNewUser(newUser);
+        ResponseEntity<Tiers> tiersResponse;
 
 
+        tiersResponse = userService.getTiersRemote(userDto.getTiersId());
 
-        return new ResponseEntity<UserWithTiersDto>(convertToDtoWithTiers(newUser), HttpStatus.CREATED);
+        if(tiersResponse.getStatusCode() == HttpStatus.NOT_FOUND){
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ApiIError.message("Tiers not found"));
+        }
+
+
+        User newUser = userService.createNewUser(userDto,tiersResponse.getBody().getId());
+
+
+        return new ResponseEntity<UserDto>(convertToDto(newUser), HttpStatus.CREATED);
     }
 
     private UserDto convertToDto(User user) {
@@ -91,17 +105,9 @@ public class Api {
         return userDto;
     }
 
-    private UserWithTiersDto convertToDtoWithTiers(User user) {
 
-        UserWithTiersDto userDto = modelMapper.map(user, UserWithTiersDto.class);
-        return userDto;
-    }
 
-    private User convertToEntity(UserDto userDto)  {
 
-        User user = modelMapper.map(userDto, User.class);
-        return user;
-    }
 
 }
 

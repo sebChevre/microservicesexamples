@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class TiersServiceImpl implements TiersService{
@@ -16,8 +17,12 @@ public class TiersServiceImpl implements TiersService{
     private TiersRepository tiersRepository;
 
     @Override
-    public Tiers findById(Integer id) {
-        return tiersRepository.findById(id);
+    public Optional<Tiers> findById(Integer id) {
+
+        Tiers tiers = tiersRepository.findById(id);
+
+        return (null == tiers) ? Optional.empty() : Optional.of(tiers) ;
+        //return tiersRepository.findById(id);
     }
 
     @Override

@@ -43,4 +43,11 @@ public class H2UserRepository implements UserRepository{
         entityManager.flush();
         return user;
     }
+
+    @Override
+    public User activateUserAccount(User user) {
+        User u = entityManager.merge(user);
+        entityManager.flush();
+        return u;
+    }
 }

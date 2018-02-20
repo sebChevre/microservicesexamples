@@ -39,6 +39,6 @@ spring:
          path: /h2console
          settings:
            trace: false
-           web-allow-others: false
+           web-allow-others: true
 
 

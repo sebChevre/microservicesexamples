@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Logger;
 
 @RestController
@@ -23,9 +24,21 @@ public class Api {
 
 
     @RequestMapping( value = "/tiers/{id}",method = RequestMethod.GET )
-    public Tiers findById(@PathVariable("id") Integer id) {
+    public ResponseEntity findById(@PathVariable("id") Integer id) {
         logger.info(String.format("Tiers.findById(%d)", id));
-        return tiersService.findById(id);
+        Optional<Tiers> tiers =  tiersService.findById(id);
+
+        ResponseEntity response;
+
+        if(tiers.isPresent()){
+            response =  new ResponseEntity<Tiers>(tiers.get(),HttpStatus.OK);
+        }else{
+            response = ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body(ApiIError.message("Entite non trouvé!"));
+        }
+
+        return response;
+
     }
 
     @RequestMapping( value = "/tiers", method = RequestMethod.GET )

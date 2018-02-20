@@ -31,4 +31,13 @@ public class TiersDto {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
+
+    @Override
+    public String toString() {
+        return "TiersDto{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                '}';
+    }
 }

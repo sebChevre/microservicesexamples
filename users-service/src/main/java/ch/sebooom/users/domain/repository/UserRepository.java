@@ -13,4 +13,6 @@ public interface UserRepository {
     User findByUserName (String userName);
 
     User create (User user);
+
+    User activateUserAccount (User user);
 }

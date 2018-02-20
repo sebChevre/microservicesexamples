@@ -21,4 +21,12 @@ public class UserWithTiersDto {
     public void setTiers(TiersDto tiers) {
         this.tiers = tiers;
     }
+
+    @Override
+    public String toString() {
+        return "UserWithTiersDto{" +
+                "user=" + user +
+                ", tiers=" + tiers +
+                '}';
+    }
 }

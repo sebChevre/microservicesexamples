@@ -17,8 +17,8 @@ public class InMemoryUserRepository implements UserRepository {
 
     static {
 
-        USERS.add(new User(1,"sebchevre","1234",1));
-        USERS.add(new User(2,"root","toor",1));
+        USERS.add(new User.UserBuilder("sebchevre","1234",1).id(1).build());
+        USERS.add(new User.UserBuilder("root","toor",1).id(2).build());
 
     }
 
@@ -39,6 +39,11 @@ public class InMemoryUserRepository implements UserRepository {
 
     @Override
     public User create(User user) {
+        throw new NotImplementedException();
+    }
+
+    @Override
+    public User activateUserAccount(User user) {
         throw new NotImplementedException();
     }
 }

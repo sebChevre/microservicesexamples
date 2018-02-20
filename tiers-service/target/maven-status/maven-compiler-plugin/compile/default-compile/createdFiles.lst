@@ -9,4 +9,5 @@ ch/sebooom/tiers/config/TracingConfiguration.class
 ch/sebooom/tiers/domain/model/Tiers.class
 ch/sebooom/tiers/spi/repository/InMemoryTiersRepository.class
 ch/sebooom/tiers/domain/repository/TiersRepository.class
+ch/sebooom/tiers/api/ApiIError.class
 ch/sebooom/tiers/config/TiersServiceConfiguration.class
