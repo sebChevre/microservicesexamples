@@ -55,6 +55,10 @@ fabric.properties
 discovery-service/src/test/
 gateway-service/src/test/
 gateway-service/target/generated-sources/
+users-service/target/**
+tiers-service/target/**
+discovery-service/target/**
+zipkin-service/target/**
 src/main/resources/
 src/test/
 tiers-service/src/main/java/ch/sebooom/tiers/exception/
